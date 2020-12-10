@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+
+
+    <h1> {{ message }}</h1>
+
+    <form method='POST' action={{ url_for('process')}} enctype="multipart/form-data">
+        <input type='file' name='file' />
+        <input type='submit' />
+    </form>
+</div>
+{% endblock %}
+
